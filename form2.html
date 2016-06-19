@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf="8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<div class="wrapper">
+
+<form method="post" action="index.html">
+
+	<h1>The Code Review</h1>
+
+	<h2>Signup for our newsletter</h2>
+
+		<p>Get the latest news on how your code is doing right in your inbox</p>
+
+	<fieldset>
+
+		<legend>Contact Information</legend>	
+
+			<label for="name">Full Name</label>
+			<input type="text" id="name" name="full_name" placeholder="Required" required>
+
+			<label for="email">Email Address</label>
+			<input type="text" id="email" name="email_address" placeholder="Required" required>
+
+			<label>Phone Number</label>
+			<input type="tel" id="phone" name="phone_number">
+
+			<label>Street Address</label>
+			<input type="text" id="address" name="street_address">
+
+			<label for="city">City</label>
+			<input type="text" id="city" name="city">
+		
+			<label>State</label>
+			<select id="state" name="state">
+				<optgroup>
+				<option value="choose">Arizona</option>
+				<option value="choose">Alaska</option>
+				<option value="choose">Arizona</option>
+				<option value="choose">Arkansas</option>
+				<option value="choose">California</option>
+				<option value="choose">Colorado</option>
+				</optgroup>
+			</select>
+			
+	</fieldset>
+
+	<fieldset>
+
+		<legend>Newsletter</legend>
+
+			<p>Select the newsletters you would like to recieve</p>
+			
+			<input class="form_cb" type="checkbox" id="html_news" name="html_news">
+			<label class="form_cb" for="html_news">HTML News</label><br>
+			
+			
+			<input class="form_cb" type="checkbox" id="css_news" name="css_news">
+			<label class="form_cb" for="css_news">CSS News</label><br>
+
+			<input class="form_cb" type="checkbox" id="js_news" name="js_news">
+			<label class="form_cb" for="js_news">Javascript News</label><br>
+
+			<p>Newsletter format</p>
+
+			<input class="form_cb" type="radio" id="html" name="newsletter">
+			<label class="form_cb" for="html">HTML</label><br>
+
+			<input class="form_cb" type="radio" id="text" name="newsletter">
+			<label class="form_cb" for="text">Plain text</label><br>
+
+
+			<p>Other topics you would like to hear about</p>
+
+			<textarea id="topics" name="other_topics"></textarea>
+
+	</fieldset>
+
+			<button type="submit" id="submit">Sign Up</button>
+
+			<p>copyright The Code Review</p>
+
+</form>
+
+</div>
+
+</body>
+
+</html>

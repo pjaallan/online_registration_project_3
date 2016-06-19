@@ -1,0 +1,52 @@
+* {
+	box-sizing: border-box;
+}
+
+form h1,
+h2,
+p {
+	text-align: center;
+}
+fieldset {
+	border: none;
+}
+legend {
+	font-weight: bold;
+	font-size: large;
+}
+label,
+input,
+select,
+textarea,
+button {
+	display: block;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+input[type="text"],
+input[type="tel"],
+textarea,
+select {
+	background-color: #eee;
+	border: solid 1px #bbb;
+	border-radius: 2px;
+}
+input[type="checkbox"],
+input[type="radio"] {
+	margin-right: 10px;
+}
+.form_cb {
+	display: inline-block;
+	width: auto;
+	padding: 0;
+	margin-bottom: 5px;
+}
+button {
+
+}
+/* DRY styles */
+
+rounded {
+	
+}
