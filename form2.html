@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf="8">
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
 	<link rel="stylesheet" href="css/normalize.css">
@@ -15,14 +15,21 @@
 
 <div class="wrapper">
 
-<form method="post" action="index.html">
-	<section>
+<section>
+
 	<h1>The Code Review</h1>
-	</section>
+
+	<div class="form-header">
 
 	<h2>Signup for our newsletter</h2>
 
 		<p>Get the latest news on how your code is doing right in your inbox</p>
+	</div>
+
+<form method="post" action="index.html">
+		
+
+	
 
 	<fieldset>
 
@@ -34,10 +41,10 @@
 			<label for="email">Email Address</label>
 			<input type="text" id="email" name="email_address" placeholder="Required" required>
 
-			<label>Phone Number</label>
+			<label for="phone">Phone Number</label>
 			<input type="tel" id="phone" name="phone_number">
 
-			<label>Street Address</label>
+			<label for="address">Street Address</label>
 			<input type="text" id="address" name="street_address">
 
 			<label for="city">City</label>
@@ -54,6 +61,9 @@
 				<option value="choose">Colorado</option>
 				</optgroup>
 			</select>
+
+			<label for="zip">ZIP Code</label>
+			<input type="text" id="zip" name="zip_code">
 			
 	</fieldset>
 
@@ -61,7 +71,7 @@
 
 		<legend>Newsletter</legend>
 
-			<p>Select the newsletters you would like to recieve</p>
+			<p class="pl">Select the newsletters you would like to recieve</p>
 			
 			<input class="form_cb" type="checkbox" id="html_news" name="html_news">
 			<label class="form_cb" for="html_news">HTML News</label><br>
@@ -73,7 +83,7 @@
 			<input class="form_cb" type="checkbox" id="js_news" name="js_news">
 			<label class="form_cb" for="js_news">Javascript News</label><br>
 
-			<p>Newsletter format</p>
+			<p class="pl">Newsletter format</p>
 
 			<input class="form_cb" type="radio" id="html" name="newsletter">
 			<label class="form_cb" for="html">HTML</label><br>
@@ -82,17 +92,20 @@
 			<label class="form_cb" for="text">Plain text</label><br>
 
 
-			<p>Other topics you would like to hear about</p>
+			<p class="pl">Other topics you would like to hear about</p>
 
 			<textarea id="topics" name="other_topics"></textarea>
 
+			<button type="submit" id="submit">Sign Up</button>
+
 	</fieldset>
 
-			<button type="submit" id="submit">Sign Up</button>
 
 			<p>copyright The Code Review</p>
 
 </form>
+
+</section>
 
 </div>
 
